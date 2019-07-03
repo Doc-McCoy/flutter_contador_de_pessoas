@@ -1,15 +1,24 @@
-# contador_de_pessoas
+# Contador de Pessoas
 
-A new Flutter application.
+Aplicativo contador de pessoas para um restaurante, desenvolvido no Flutter.
 
-## Getting Started
+Primeiro projeto [DESTE](https://www.udemy.com/curso-completo-flutter-app-android-ios/) curso na Udemy.
 
-This project is a starting point for a Flutter application.
+## Conteúdo ensinado
 
-A few resources to get you started if this is your first Flutter project:
+Neste projeto foram vistos os seguintes tópicos:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Stateless e Stateful
+- Text
+- Column
+- Row
+- Image
+- Stack
+- Padding
+- TextStyle
+- FontStyle
+- FontWeight
+- FlatButton
 
 For help getting started with Flutter, view our 
 [online documentation](https://flutter.dev/docs), which offers tutorials, 
