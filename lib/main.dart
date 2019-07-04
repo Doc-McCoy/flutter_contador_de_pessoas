@@ -14,11 +14,16 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
 
+  // Variável contadora
   int _people = 0;
+  // Texto info
   String _infoText = "Pode Entrar!";
 
   void _changePeople(int delta) {
+    // A função setState faz com que a tela recarregue.
+    // Chamar ela sempre que algo no visual do APP precisar ser modificado.
     setState(() {
+      // Aumentar / diminuir a variável
       _people += delta;
 
       if (_people < 0) {
@@ -33,27 +38,33 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
+    return Stack( // Widget que permite colocar a imagem de fundo e o resto sobre ela
+
       children: <Widget>[
-        Image.asset(
+        Image.asset( // Foi necessário adicionar o caminho do asset no arquivo pubspec.yaml
           "images/restaurant.jpg",
-          fit: BoxFit.cover,
+          fit: BoxFit.cover, // Estilo de preenchimento
           height: 1000.0,
         ),
+
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+
             Text(
               "Pessoas: $_people",
               style:
               TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
             ),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
+
                 Padding(
                   padding: EdgeInsets.all(10.0),
                   child: FlatButton(
+
                     child: Text(
                       "+1",
                       style: TextStyle(fontSize: 40.0, color: Colors.white),
@@ -63,9 +74,11 @@ class _HomeState extends State<Home> {
                       },
                   ),
                 ),
+
                 Padding(
                   padding: EdgeInsets.all(10.0),
                   child: FlatButton(
+
                     child: Text(
                       "-1",
                       style: TextStyle(fontSize: 40.0, color: Colors.white),
@@ -77,6 +90,7 @@ class _HomeState extends State<Home> {
                 ),
               ],
             ),
+
             Text(
               _infoText,
               style: TextStyle(
