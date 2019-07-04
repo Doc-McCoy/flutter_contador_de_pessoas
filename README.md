@@ -13,12 +13,14 @@ Neste projeto foram vistos os seguintes tópicos:
 - Column
 - Row
 - Image
-- Stack
+- Stack (Widget que permite colocar um widget sobre o outro)
 - Padding
 - TextStyle
 - FontStyle
 - FontWeight
 - FlatButton
+
+O código do projeto fica em `lib/main.dart`
 
 For help getting started with Flutter, view our 
 [online documentation](https://flutter.dev/docs), which offers tutorials, 
